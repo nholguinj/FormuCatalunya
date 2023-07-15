@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario dos objetos</title>
+    <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="principal">
+    <h1 class="text-center" >Realice su Pedido</h1>
+    <hr>
+    <!– contenedor padre –>
+<div class="container text-center">
+    <br>
+    <!– pedido y cantidad –>
+    <div class="row">
+
+        <div class="col-2 mb-2">
+            <label><b>Pedido:</b></label>
+        </div>
+
+        <div class="col-4 mb-2">
+            <input class="form-control" type="text" id="pedido" placeholder="Escribir codigo">
+        </div>
+
+        <div class="col-2 mb-2">
+            <label><b>Cantidad:</b></label>
+        </div>
+
+        <div class="col-4 mb-2">
+            <input class="form-control" type="text" id="cantidad" placeholder="Escribir cantidad">
+        </div>
+
+        </div>
+
+    <!– Producto y valor –>
+    <br><!– Salto de linea –>
+    <div class="row">
+
+        <div class="col-2 mb-2">
+            <label><b>Producto:</b></label>
+        </div>
+
+        <div class="col-4 mb-2">
+            <input class="form-control" type="text" id="producto" placeholder="Escribir Producto">
+        </div>
+
+        <div class="col-2 mb-2">
+            <label><b>Valor:</b></label>
+        </div>
+
+        <div class="col-4 mb-2">
+            <input class="form-control" type="text" id="valor" placeholder="Escribir Valor">
+        </div>
+
+        </div>
+    <br>
+    <!– addbutton –>
+    <div class="row">
+        <div class="col text-center">
+            <button type="button" class="btn btn-primary" onclick="addItem()">AGREGAR</button>
+        </div>
+
+    </div>
+
+    <!– Subtitulo –>
+    <br>
+
+    <div class="div-elementos">
+
+    <h2>Lista de Articulos</h2>
+    <hr>
+    <div class="row mb-4">
+        <p class="col-1 mb-2 ml-1"><b>CANTIDAD</b></p><p class="col-4"><b>PRODUCTO</b><p class="col-3"><b>PRECIO</b> <p class="col-3"><b>TOTAL</b></p>
+    </div>
+        <div class="col-12 mb-3" id="items">No HAY ELEMENTOS</div>
+ </div>
+
+</div>
+    <script src="objectscript.js"></script>
+</body>
+
+</html>
